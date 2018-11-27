@@ -11,4 +11,4 @@ node.addService(rspec.Execute(shell ="sh",
                               command = "setup.sh")
 
 # Print the RSpec to the enclosing page.
-portal.context.printRequestRSpec()
+# portal.context.printRequestRSpec()
