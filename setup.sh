@@ -16,8 +16,8 @@ setup ufw allow 22
 
 
 #My-SQL
-#sudo apt install mysql-server
-#sudo ufw allow mysql
+sudo apt install mysql-server
+sudo ufw allow mysql
 
 
 #setup anaconda
@@ -43,3 +43,5 @@ sudo su seed -c "conda install -c anaconda requests"
 #jupyter notebook --generate-config
 #jupyter notebook password
 #jupyter notebook --ip * --NotebookApp.token='' --no-browser
+
+
