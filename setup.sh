@@ -8,6 +8,12 @@ sudo apt -y update
 sudo apt install -y apache2
 sudo ufw allow in "Apache Full"
 sudo systemctl enable apache2
+
+#My-SQL
+sudo apt install mysql-server
+sudo ufw allow mysql
+#PHP
+sudo apt install phpmyadmin php-mbstring php-gettext
 sudo systemctl restart apache2
 
 # allow ports
@@ -18,6 +24,9 @@ setup ufw allow 22
 #My-SQL
 sudo apt install mysql-server
 sudo ufw allow mysql
+
+
+
 
 
 #setup anaconda
