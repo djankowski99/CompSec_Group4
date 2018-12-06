@@ -44,6 +44,9 @@ sudo usermod -aG root seed
 sudo su seed -c "touch ~/.sudo_as_admin_successful"
 sudo su seed -c "cd ~/ && unset XDG_RUNTIME_DIR && nohup jupyter notebook --NotebookApp.token='' --ip * --no-browser > ~/nohup_jupyter.out &"
 
+#git
+sudo apt-get install git-core
+git clone https://github.com/linhbngo/Computer-Security.git
 
 #anaconda
 sudo su seed -c "conda install -c anaconda beautifulsoup4"
