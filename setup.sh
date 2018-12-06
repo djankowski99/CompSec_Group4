@@ -48,6 +48,7 @@ sudo su seed -c "cd ~/ && unset XDG_RUNTIME_DIR && nohup jupyter notebook --Note
 sudo apt-get install git-core
 git clone https://github.com/linhbngo/Computer-Security.git
 
+cp -r  local/repository/Labs home/seed/
 #anaconda
 sudo su seed -c "conda install -c anaconda beautifulsoup4"
 sudo su seed -c "conda install -c anaconda requests"
