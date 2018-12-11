@@ -21,9 +21,6 @@ setup ufw allow 8888
 setup ufw allow 22
 
 
-#My-SQL
-sudo apt install mysql-server
-sudo ufw allow mysql
 
 
 
