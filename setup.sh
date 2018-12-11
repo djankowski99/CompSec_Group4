@@ -47,6 +47,7 @@ git clone https://github.com/linhbngo/Computer-Security.git
 
 cp -r  /Computer-Security home/seed/
 sudo  chmod -R 777 home/seed/Computer-Security
+
 #anaconda
 sudo su seed -c "conda install -c anaconda beautifulsoup4"
 sudo su seed -c "conda install -c anaconda requests"
