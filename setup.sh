@@ -21,9 +21,6 @@ setup ufw allow 8888
 setup ufw allow 22
 
 
-#My-SQL
-sudo apt install mysql-server
-sudo ufw allow mysql
 
 
 
@@ -48,6 +45,8 @@ sudo su seed -c "cd ~/ && unset XDG_RUNTIME_DIR && nohup jupyter notebook --Note
 sudo apt-get install git-core
 git clone https://github.com/linhbngo/Computer-Security.git
 
+cp -r  /Computer-Security home/seed/
+sudo  chmod -R 777 home/seed/Computer-Security
 #anaconda
 sudo su seed -c "conda install -c anaconda beautifulsoup4"
 sudo su seed -c "conda install -c anaconda requests"
