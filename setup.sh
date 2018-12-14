@@ -10,10 +10,18 @@ sudo ufw allow in "Apache Full"
 sudo systemctl enable apache2
 
 #My-SQL
-sudo apt install mysql-server
+sudo apt install -y mysql-server
 sudo ufw allow mysql
+
 #PHP
-sudo apt install phpmyadmin php-mbstring php-gettext
+#sudo apt install php -y
+#sudo apt install -y phpmyadmin php-mbstring php-gettext
+sudo apt install -y php libapache2-mod-php php-mysqlnd
+sudo env DEBIAN_FRONTEND=noninteractive apt -yq install phpmyadmin
+sudo apt install -y composer
+sudo a2dismod mpm_event
+sudo a2dismod php7.0
+sudo a2enmod php7.2
 sudo systemctl restart apache2
 
 # allow ports
