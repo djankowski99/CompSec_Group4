@@ -1,0 +1,278 @@
+/* <style> /**/
+
+/* ***************************************
+	RESET CSS
+*************************************** */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+body {
+	background-color: white;
+}
+html, body {
+	height: 100%;
+	margin-bottom: 1px;
+}
+img {
+	border-width:0;
+	border-color:transparent;
+}
+/* keep focus styles for a11y
+:focus {
+	outline: 0 none;
+}*/
+ol, ul {
+	list-style: none;
+}
+em, i {
+	font-style:italic;
+}
+ins {
+	text-decoration:none;
+}
+strike, del {
+	text-decoration:line-through;
+}
+strong, b {
+	font-weight:bold;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+caption, th, td {
+	text-align: left;
+	font-weight: normal;
+	vertical-align: top;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+}
+blockquote, q {
+	quotes: "" "";
+}
+a {
+	text-decoration: none;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0;
+}
+[hidden] { 
+	display: none !important;
+}/**
+ * CSS typography
+ */
+
+/* ***************************************
+	Typography
+*************************************** */
+body {
+	color: #333;
+	font-size: 90%;
+	line-height: 1.4em;
+	font-family: "Helvetica Neue", Helvetica, "Lucida Grande", Arial, sans-serif;
+}
+
+a {
+	color: #5097CF;
+}
+
+a:hover,
+a.selected { /* @todo remove .selected */
+	color: #555;
+	text-decoration: underline;
+}
+
+p {
+	margin-bottom: 15px;
+}
+
+p:last-child {
+	margin-bottom: 0;
+}
+
+pre, code {
+	font-family: Monaco, "Courier New", Courier, monospace;
+	font-size: 12px;
+
+	background:#EBF5FF;
+	color: #000;
+	overflow:auto;
+
+	overflow-x: auto; /* Use horizontal scroller if needed; for Firefox 2, not needed in Firefox 3 */
+
+	white-space: pre-wrap;
+	word-wrap: break-word; /* IE 5.5-7 */
+
+}
+
+pre {
+	padding:3px 15px;
+	margin:0px 0 15px 0;
+	line-height:1.3em;
+}
+
+code {
+	padding:2px 3px;
+}
+
+.elgg-monospace {
+	font-family: Monaco, "Courier New", Courier, monospace;
+}
+
+blockquote {
+	line-height: 1.3em;
+	padding: 10px 15px;
+	margin: 0 0 15px 0;
+	background: #E2F2FE;
+	border: 1px solid #A1CBEA;
+	border-radius: 3px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+	color: #444;
+
+	text-rendering: optimizelegibility;
+}
+
+h1 { font-size: 1.8em; }
+h2 { font-size: 1.5em; line-height: 1.1em; }
+h3 { font-size: 1.2em; }
+h4 { font-size: 1.0em; }
+h5 { font-size: 0.9em; }
+h6 { font-size: 0.8em; }
+
+.elgg-heading-site, .elgg-heading-site:hover {
+	font-family: Georgia, Times, "Times New Roman", serif;
+	font-size: 2em;
+	line-height: 1.2em;
+	color: #FFF;
+	text-shadow: 1px 1px 3px #333;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+	text-decoration: none;
+}
+.elgg-heading-main {
+	display: inline-block;
+	padding-top: 15px;
+	margin-right: 10px;
+}
+.elgg-heading-basic {
+	color: #0054A7;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+.elgg-subtext {
+	color: #666;
+	font-size: 85%;
+	line-height: 1.4em;
+	font-style: italic;
+}
+
+.elgg-subtext time {
+	color: #666;
+}
+
+.elgg-text-help {
+	display: block;
+	font-size: 85%;
+	font-style: italic;
+}
+
+.elgg-quiet {
+	color: #666;
+}
+
+.elgg-loud {
+	color: #0054A7;
+}
+
+/* ***************************************
+	USER INPUT DISPLAY RESET
+*************************************** */
+.elgg-output {
+	margin-top: 10px;
+}
+
+.elgg-output dt { font-weight: bold }
+.elgg-output dd { margin: 0 0 1em 1em }
+
+.elgg-output ul, .elgg-output ol {
+	margin: 0 1.5em 1.5em 0;
+	padding-left: 1.5em;
+}
+.elgg-output ul {
+	list-style-type: disc;
+}
+.elgg-output ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding-left: .4em;
+}
+.elgg-output table {
+	border: 1px solid #DCDCDC;
+}
+.elgg-output table td {
+	border: 1px solid #DCDCDC;
+	padding: 3px 5px;
+}
+.elgg-output img {
+	max-width: 100%;
+	height: auto;
+}
+/* CSS for CKEditor content iframe */
+
+/* The Elgg CSS reset forces the scrollbar which we don't want */
+html, body {
+	height: auto;
+	margin: 0;
+}
+
+body {
+	margin: 8px;
+}
+
+dt { font-weight: bold }
+dd { margin: 0 0 1em 1em }
+
+ul, ol {
+	margin: 0 1.5em 1.5em 0;
+	padding-left: 1.5em;
+}
+ul {
+	list-style-type: disc;
+}
+ol {
+	list-style-type: decimal;
+	list-style-position: inside;
+	padding-left: .4em;
+}
+table {
+	border: 1px solid #ccc;
+}
+table td {
+	border: 1px solid #ccc;
+	padding: 3px 5px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+}
