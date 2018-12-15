@@ -20,14 +20,15 @@ sudo systemctl restart apache2
 setup ufw allow 8888
 setup ufw allow 22
 
-#copy the website soure to the correct directoy
-sudo \cp -Rf /local/repository/Web_Setup/www /var/
-sudo \cp -Rf /local/repository/Web_Setup/apache2 /etc/
-sudo \cp -Rf /local/repository/Web_Setup/php /etc/
-sudo \cp -Rf /local/repository/Web_Setup/phpmyadmin /etc/
-sudo \cp -Rf /local/repository/Web_Setup/mysql /etc/
+#copy the website soure to the correct directory 
+#this was commented out since it was not registering properly with apache
+  #sudo \cp -Rf /local/repository/Web_Setup/www /var/
+  #sudo \cp -Rf /local/repository/Web_Setup/apache2 /etc/
+  #sudo \cp -Rf /local/repository/Web_Setup/php /etc/
+  #sudo \cp -Rf /local/repository/Web_Setup/phpmyadmin /etc/
+  #sudo \cp -Rf /local/repository/Web_Setup/mysql /etc/
 
-sudo systemctl restart apache2
+  #sudo systemctl restart apache2
 
 #setup anaconda
 wget https://repo.anaconda.com/archive/Anaconda3-5.3.0-Linux-x86_64.sh
