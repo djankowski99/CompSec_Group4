@@ -27,7 +27,6 @@ setup ufw allow 22
   #sudo \cp -Rf /local/repository/Web_Setup/php /etc/
   #sudo \cp -Rf /local/repository/Web_Setup/phpmyadmin /etc/
   #sudo \cp -Rf /local/repository/Web_Setup/mysql /etc/
-
   #sudo systemctl restart apache2
 
 #setup anaconda
